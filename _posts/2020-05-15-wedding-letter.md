@@ -1,6 +1,9 @@
 ---
 layout: post
 title: A Letter for Your Wedding Day
+author:
+  name: Cody VanZandt
+  twitter: CodyVanZandt
 ---
 Dear Dalton and Marina,
 
