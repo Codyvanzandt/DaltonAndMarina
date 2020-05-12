@@ -1,6 +1,8 @@
 ---
 layout: home
-title: Welcome
+title: Welcome!
 ---
 
-![](/assets/photos/d-and-m-headshot.png)
+<p align="center">
+  <img src="/assets/photos/d-and-m-headshot.png"></img>
+ </p>
