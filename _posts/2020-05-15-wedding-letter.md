@@ -2,7 +2,7 @@
 layout: post
 title: A Letter for Your Wedding Day
 ---
-Dalton and Marina,
+Dear Dalton and Marina,
 
 When the two of you queued up together almost a decade ago, you were your Bronze V noobs, barely old enough to heft a BF Sword and stumble down Mid. Love was a new game mode, equal parts terrifying and thrilling. No one told you the rules, and no one could. This was a custom game with mysterious mechanics discoverable only by trial and error.
 
