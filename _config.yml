@@ -18,9 +18,9 @@ title: Dalton and Marina Richardson
 email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: daltonandmarina.com
 author:
-  name:
+  name: Dalton and Marina
   twitter:
   picture:
 twitter_username:
