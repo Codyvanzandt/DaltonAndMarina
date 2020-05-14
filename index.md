@@ -11,7 +11,7 @@ title: Welcome!
  
  <script>
   var a   = moment();
-  var b = moment('2020-05-01 12:00:00');
+  var b = moment('2020-05-15 20:00:00');
   
   var years = a.diff(b, 'year');
   b.add(years, 'years');
