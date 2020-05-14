@@ -8,8 +8,9 @@ title: Welcome!
 <p align="center">
   <img src="/assets/photos/d-and-m-headshot.png">
  </p>
- 
+
  <script>
+  function updateWeddingClock() {
   var a   = moment();
   var b = moment('2020-05-15 20:00:00');
   
@@ -29,8 +30,9 @@ title: Welcome!
   b.add(minutes, 'minutes');
   
   var seconds = a.diff(b, 'seconds');
-
-  console.log(years + ' years ' + months + ' months ' + days + ' days');
   
   document.getElementById("marriedSince").innerHTML = "<p>We're Dalton and Marina, a couple of League-playing, dog-loving Japanophiles who have been married for " + years + " years, "  + months + " months, " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.</p>";
+  }
+  
+  var intervalID = setInterval(updateWeddingClock, 1000)
  </script>
