@@ -20,7 +20,7 @@ title: Welcome!
   b.add(months, 'months');
 
   var days = a.diff(b, 'days');
-  b.add(days, 'days);
+  b.add(days, 'days');
   
   var hours = a.diff(b, 'hours');
   b.add(hours, 'hours');
