@@ -23,5 +23,5 @@ title: Welcome!
 
   console.log(years + ' years ' + months + ' months ' + days + ' days');
   
-  document.getElementById("marriedSince").innerHTML = "<p>We're Dalton and Marina, a couple of League-playing, dog-loving Japanophiles who have been married for " + years + " years, "  + months + " months, " + "and " days + " days!"</p>";
+  document.getElementById("marriedSince").innerHTML = "<p>We're Dalton and Marina, a couple of League-playing, dog-loving Japanophiles who have been married for " + years + " years, "  + months + " months, " + "and " + days + " days!</p>";
  </script>
