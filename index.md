@@ -20,8 +20,17 @@ title: Welcome!
   b.add(months, 'months');
 
   var days = a.diff(b, 'days');
+  b.add(days, 'days);
+  
+  var hours = a.diff(b, 'hours');
+  b.add(hours, 'hours');
+  
+  var minutes = a.diff(b, 'minutes');
+  b.add(minutes, 'minutes');
+  
+  var seconds = a.diff(b, 'seconds');
 
   console.log(years + ' years ' + months + ' months ' + days + ' days');
   
-  document.getElementById("marriedSince").innerHTML = "<p>We're Dalton and Marina, a couple of League-playing, dog-loving Japanophiles who have been married for " + years + " years, "  + months + " months, " + "and " + days + " days!</p>";
+  document.getElementById("marriedSince").innerHTML = "<p>We're Dalton and Marina, a couple of League-playing, dog-loving Japanophiles who have been married for " + years + " years, "  + months + " months, " + days + " days, " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.</p>";
  </script>
