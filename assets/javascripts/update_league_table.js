@@ -12,6 +12,8 @@ function updateWithLeagueData(leagueData, tableID){
         
         keys = ["gameMode", "championID", "kills", "deaths", "assists"]
         for (const [index, key] of keys.entries()) {
+            console.log(key);
+            console.log(gameData[key]);
             var newCell  = newRow.insertCell(index);
             var newText  = document.createTextNode(gameData[key]);
             newCell.appendChild(newText);
