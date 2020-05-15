@@ -45,4 +45,5 @@ title: League
 
 <script>
   getMatchData("Thalaern",10).then( data => updateWithLeagueData(data, "daltonTable"));
+  getMatchData("Nekare",10).then( data => updateWithLeagueData(data, "marinaTable"));
 </script>
