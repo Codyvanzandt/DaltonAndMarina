@@ -69,6 +69,7 @@ function extractMatchData(matchData, summonerName, IDToChampDict){
         "championID" :  IDToChampDict[ getChampionID(participantData) ],
         "kills" : getKills(participantData),
         "deaths" : getDeaths(participantData),
+        "assists" : getAssists(participantData),
         "matchResult" : getMatchResult(participantData)
     }
 }
@@ -101,6 +102,10 @@ function getKills(participantData){
 
 function getDeaths(participantData){
     return participantData["stats"]["deaths"]
+}
+
+function getAssists(participantData){
+    return participantData["stats"]["assists"]
 }
 
 function getMatchResult(participantData){
