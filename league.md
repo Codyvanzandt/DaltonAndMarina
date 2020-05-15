@@ -11,11 +11,36 @@ title: League
 
 ### Dalton
 
-<div id="dalton"></div>
+<table id="daltonTable">
+  <thead>
+    <tr>
+      <th>Game Mode</th>
+      <th>Champion</th> 
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
 
 ### Marina
 
-<div id="marina"></div>
+<table id="marinaTable">
+  <thead>
+    <tr>
+      <th>Game Mode</th>
+      <th>Champion</th> 
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
 
 <script>
   getMatchData("Thalaern",10)
