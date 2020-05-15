@@ -157,7 +157,7 @@ function fetchCurrentChampionPatchNO(){
 }
 
 function fetchChampionData(patchNo){
-    return patchNo.then(no => fetch(`http://ddragon.leagueoflegends.com/cdn/${no}/data/en_US/champion.json`,{headers : {"Cache-Control" : "max-age=3600"}}))
+    return patchNo.then(no => fetch(`https://cors-anywhere.herokuapp.com/http://ddragon.leagueoflegends.com/cdn/${no}/data/en_US/champion.json`,{headers : {"Cache-Control" : "max-age=3600"}}))
     .then(response => response.json())
 }
 
