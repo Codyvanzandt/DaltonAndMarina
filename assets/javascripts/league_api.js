@@ -19,10 +19,6 @@ async function getLastMatches(summonerName, n){
 }
 
     // DATA FETCHES
-{ headers: {
-      "Cache-Control": "max-age=300"
-    },
-}
 function fetchSummonerInfo(summonerName){
     url = `https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${apiKey}`
     return fetch(url, {headers : {"Cache-Control" : "max-age=300"}})
