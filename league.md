@@ -15,7 +15,7 @@ title: League
 
 ### Marina
 
-<div id="marina"</div>
+<div id="marina"></div>
 
 <script>
   getMatchData("Thalaern",10)
