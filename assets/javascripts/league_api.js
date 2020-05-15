@@ -21,19 +21,19 @@ async function getLastMatches(summonerName, n){
     // DATA FETCHES
 
 function fetchSummonerInfo(summonerName){
-    url = `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${apiKey}`
+    url = `https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${apiKey}`
     return fetch(url)
     .then(response => response.json())
 }
 
 function fetchMatchList(accountID){
     return accountID.then(
-        id => fetch(`https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${id}?api_key=${apiKey}`))
+        id => fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${id}?api_key=${apiKey}`))
         .then(response => response.json());
 }
 
 function fetchMatchInfo(matchID){
-    return fetch(`https://na1.api.riotgames.com/lol/match/v4/matches/${matchID}?api_key=${apiKey}`)
+    return fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matches/${matchID}?api_key=${apiKey}`)
     .then(response => response.json());
 }
 
@@ -146,7 +146,7 @@ async function getChampionIDToNameMap(){
 
 // FETCH
 function fetchCurrentChampionPatchNO(){
-    url = "https://ddragon.leagueoflegends.com/realms/na.json"
+    url = "https://cors-anywhere.herokuapp.com/https://ddragon.leagueoflegends.com/realms/na.json"
     return fetch(url)
     .then(response => response.json())
     .then(data => data["n"]["champion"])
