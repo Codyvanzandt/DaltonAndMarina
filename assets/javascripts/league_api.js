@@ -19,21 +19,24 @@ async function getLastMatches(summonerName, n){
 }
 
     // DATA FETCHES
-
+{ headers: {
+      "Cache-Control": "max-age=300"
+    },
+}
 function fetchSummonerInfo(summonerName){
     url = `https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${apiKey}`
-    return fetch(url)
+    return fetch(url, {headers : {"Cache-Control" : "max-age=300"}})
     .then(response => response.json())
 }
 
 function fetchMatchList(accountID){
     return accountID.then(
-        id => fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${id}?api_key=${apiKey}`))
+        id => fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${id}?api_key=${apiKey}`,{headers : {"Cache-Control" : "max-age=300"}}))
         .then(response => response.json());
 }
 
 function fetchMatchInfo(matchID){
-    return fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matches/${matchID}?api_key=${apiKey}`)
+    return fetch(`https://cors-anywhere.herokuapp.com/https://na1.api.riotgames.com/lol/match/v4/matches/${matchID}?api_key=${apiKey}`,{headers : {"Cache-Control" : "max-age=300"}})
     .then(response => response.json());
 }
 
@@ -152,13 +155,13 @@ async function getChampionIDToNameMap(){
 // FETCH
 function fetchCurrentChampionPatchNO(){
     url = "https://cors-anywhere.herokuapp.com/https://ddragon.leagueoflegends.com/realms/na.json"
-    return fetch(url)
+    return fetch(url, {headers : {"Cache-Control" : "max-age=3600"}})
     .then(response => response.json())
     .then(data => data["n"]["champion"])
 }
 
 function fetchChampionData(patchNo){
-    return patchNo.then(no => fetch(`http://ddragon.leagueoflegends.com/cdn/${no}/data/en_US/champion.json`))
+    return patchNo.then(no => fetch(`http://ddragon.leagueoflegends.com/cdn/${no}/data/en_US/champion.json`,{headers : {"Cache-Control" : "max-age=3600"}}))
     .then(response => response.json())
 }
 
