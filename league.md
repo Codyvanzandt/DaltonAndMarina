@@ -5,6 +5,7 @@ title: League
 
 <head>
   <script type = "text/javascript" src = "/assets/javascripts/league_api.js"></script>
+  <script type = "text/javascript" src = "/assets/javascripts/update_league_table.js"></script>
 </head>
 
 ## Recent League of Legends Matches
@@ -43,6 +44,5 @@ title: League
 </table>
 
 <script>
-  getMatchData("Thalaern",10)
-  getMatchData("Nekare", 10)
+  getMatchData("Thalaern",10).then( data => updateWithLeagueData(data, "daltonTable"));
 </script>
