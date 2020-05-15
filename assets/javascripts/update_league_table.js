@@ -10,12 +10,11 @@ function updateWithLeagueData(leagueData, tableID){
             newRow.setAttribute("style", "background-color:rgba(255, 0, 0, 0.3);")
         }
         
-        for (const [index, [key, value]] of Object.entries(Object.entries(gameData))) {
-            if( key != "matchResult" ){
-                var newCell  = newRow.insertCell(index);
-                var newText  = document.createTextNode(value);
-                newCell.appendChild(newText);
+        keys = ["gameMode", "championID", "kills", "deaths", "assists"]
+        for (const [index, key] of keys.entries()) {
+            var newCell  = newRow.insertCell(index);
+            var newText  = document.createTextNode(gameData[key]);
+            newCell.appendChild(newText);
             }  
         }
     }
-}
