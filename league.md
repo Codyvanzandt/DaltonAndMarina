@@ -8,3 +8,16 @@ title: League
 </head>
 
 ## Recent League of Legends Matches
+
+### Dalton
+
+<div id="dalton"></div>
+
+### Marina
+
+<div id="marina"</div>
+
+<script>
+  getMatchData("Thalaern",10)
+  getMatchData("Nekare", 10)
+</script>
